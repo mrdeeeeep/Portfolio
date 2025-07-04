@@ -1,4 +1,3 @@
-
 import { Github, Twitter, Linkedin, Mail, Download } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
@@ -16,10 +15,9 @@ const Sidebar = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, label: 'GitHub', href: '#' },
-    { icon: Twitter, label: 'Twitter', href: '#' },
-    { icon: Linkedin, label: 'LinkedIn', href: '#' },
-    { icon: Mail, label: 'Email', href: '#' }
+    { icon: Github, label: 'GitHub', href: 'https://github.com/mrdeeeeep' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/deep-baro-863386239/' },
+    { icon: Mail, label: 'Email', href: 'mailto:deepbaro.info@gmail.com' }
   ];
 
   useEffect(() => {
@@ -124,15 +122,16 @@ const Sidebar = () => {
         {/* Download Resume Button */}
         <div className="flex justify-center">
           <a
-            href="#"
+            href="Deep_s_Resume.pdf"
             className="text-sarah-text-secondary hover:text-sarah-text transition-colors duration-200 flex items-center gap-2"
             aria-label="Download Resume"
+            download
+            target="_blank" rel="noopener noreferrer"
           >
             <Download size={20} />
             <span className="text-sm font-medium uppercase tracking-wide">Resume</span>
           </a>
         </div>
-        
         {/* Social Links */}
         <div className="flex gap-6 justify-center">
           {socialLinks.map((social) => (

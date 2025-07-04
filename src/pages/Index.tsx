@@ -94,7 +94,7 @@ const Index = () => {
               className="text-sarah-text font-semibold"
             />
           </p>
-          <br /><br /><br /><br /><br />
+          <br /><br /><br /><br /><br /><br />
         </section>
 
         <div className="max-w-4xl mx-auto animate-fade-in">
