@@ -1,4 +1,3 @@
-
 import Sidebar from '@/components/Sidebar';
 import ProjectCard from '@/components/ProjectCard';
 import ExperienceCard from '@/components/ExperienceCard';
@@ -9,15 +8,39 @@ import TypingAnimation from '@/components/TypingAnimation';
 
 import ProfileImage from '@/images/pfpc.jpeg';
 
+import acaResourceRecc1 from '@/images/projectSnaps/acaResourceRecc1.png';
+import acaResourceRecc2 from '@/images/projectSnaps/acaResourceRecc2.png';
+import acaResourceRecc3 from '@/images/projectSnaps/acaResourceRecc3.png';
+import acaResourceRecc4 from '@/images/projectSnaps/acaResourceRecc4.png';
+import acaResourceRecc5 from '@/images/projectSnaps/acaResourceRecc5.png';
+import acaResourceRecc6 from '@/images/projectSnaps/acaResourceRecc6.png';
+
+
+
 const Index = () => {
   const projects = [
     {
-      title: "NEEPCO Internship",
-      description: "Trained and fine-tuned LLM to build a chatbot for a specific document (SOP) for the company. Optimized and implemented API optimization and streamlined seeking experiences.",
-      company: "NEEPCO",
-      period: "MAY 2024 - JUL 2024",
-      technologies: ["Python", "LLM", "API", "Machine Learning"],
-      stars: 28
+      title: "Academic Resource Recommender - BTech Project",
+      description: "Developed a web app that recommends relevant videos, papers, books, repos, and articles based on Filtering/Recommendation Algorithms.",
+      period: "2024 - 2025",
+      technologies: ["React.js", "MongoDB", "Express.js", "API", "Recommendation Algorithms",],
+      githubUrl: "https://github.com/mrdeeeeep/skillCrate.git",
+      screenshots: [
+        acaResourceRecc1,
+        acaResourceRecc2,
+        acaResourceRecc3,
+        acaResourceRecc4,
+        acaResourceRecc5,
+        acaResourceRecc6
+        
+      ]
+    },
+    {
+      title: "AI-Powered Chatbot",
+      description: "Developed a chatbot using LLMs to assist employees with DOP (Delegation of Power) documents.",
+      period: "2024",
+      technologies: ["Python", "NLP", "LLM", "Chatbot"],
+      // screenshots: [chatbot1],
     },
   ];
 
