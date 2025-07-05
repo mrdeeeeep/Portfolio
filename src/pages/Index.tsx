@@ -6,6 +6,8 @@ import SkillsSection from '@/components/SkillsSection';
 import TrainingSection from '@/components/TrainingSection';
 import TypingAnimation from '@/components/TypingAnimation';
 
+import {MapPinCheckInside} from 'lucide-react'
+
 import ProfileImage from '@/images/pfpc.jpeg';
 
 import acaResourceRecc1 from '@/images/projectSnaps/acaResourceRecc1.png';
@@ -15,14 +17,17 @@ import acaResourceRecc4 from '@/images/projectSnaps/acaResourceRecc4.png';
 import acaResourceRecc5 from '@/images/projectSnaps/acaResourceRecc5.png';
 import acaResourceRecc6 from '@/images/projectSnaps/acaResourceRecc6.png';
 
+import collabDoc1 from '@/images/projectSnaps/collabDoc1.png';
+import collabDoc2 from '@/images/projectSnaps/collabDoc2.png';
+
 
 
 const Index = () => {
   const projects = [
     {
       title: "Academic Resource Recommender - BTech Project",
-      description: "Developed a web app that recommends relevant videos, papers, books, repos, and articles based on Filtering/Recommendation Algorithms.",
-      period: "2024 - 2025",
+      description: "Developed a web app that recommends relevant videos, papers, books, repos, and articles based on Filtering/Recommendation Algorithms upon User Interaction Data & Metadata of Recources.",
+      period: "2024 - 2025 (still working on it)",
       technologies: ["React.js", "MongoDB", "Express.js", "API", "Recommendation Algorithms",],
       githubUrl: "https://github.com/mrdeeeeep/skillCrate.git",
       screenshots: [
@@ -36,11 +41,22 @@ const Index = () => {
       ]
     },
     {
-      title: "AI-Powered Chatbot",
-      description: "Developed a chatbot using LLMs to assist employees with DOP (Delegation of Power) documents.",
-      period: "2024",
-      technologies: ["Python", "NLP", "LLM", "Chatbot"],
-      // screenshots: [chatbot1],
+      title: "Real-Time Collaborative Text Editor",
+      description: "Build a modern web-based platform for teams to collaborate on documents in real-time, assign tasks, and use AI (OpenAI API) for productivity (e.g., generating summaries, rewriting, translating",
+      period: "2025 (still working on it)",
+      technologies: ["React.js", "Express.js", "Liveblocks", "TipTap", "LLM"],
+      githubUrl:"https://github.com/mrdeeeeep/collaborativeTextEditor.git",
+      screenshots: [
+        collabDoc1,
+        collabDoc2
+      ]
+    },
+    {
+      title: "nextSkill - Personalized Roadmap Builder",
+      description: "Built an AI-powered tool to generate personalized skill-building roadmaps based on user input and preferences.",
+      period: "2025",
+      technologies: ["React.js", "MongoDB", "Express.js", "Supabase", "LLM"],
+      githubUrl: "https://github.com/mrdeeeeep/roadmapBuilder.git"
     },
   ];
 
@@ -82,11 +98,12 @@ const Index = () => {
     },
     {
       institution: "Kendriya Vidyalaya Tamulpur",
-      degree: "10+12th - Physics, Chemistry, Maths, Computer Science",
+      degree: "10+12th (Science)",
       location: "Tamulpur, Assam", 
       period: "2019 - 2021",
       details: [
-        "Percentage: 84.4%"
+        "Percentage: 84.4%",
+        "Relevant Coursework: Physics, Chemistry, Mathematics, Computer Science"
       ]
     }
   ];
@@ -96,7 +113,7 @@ const Index = () => {
       <Sidebar />
       
       <main className="ml-[280px] flex-1 p-16">
-        <br /><br /><br />
+        <br /><br />
         {/* About Section with Large Profile Image */}
         <section id="about" className="mb-20 flex flex-col items-center justify-center text-center">
           <div className="w-80 h-80 rounded-full mb-12 overflow-hidden shadow-2xl">
@@ -116,6 +133,9 @@ const Index = () => {
               words={['Full Stack Development', 'AI/ML']} 
               className="text-sarah-text font-semibold"
             />
+          </p>
+          <p className="text-lg text-sarah-text-secondary mt-4 max-w-2xl">
+            <MapPinCheckInside className="inline mr-2" size={20} />Kokrjhar, Assam, India
           </p>
           <br /><br /><br /><br /><br /><br />
         </section>
@@ -142,6 +162,7 @@ const Index = () => {
                 </div>
               ))}
             </div>
+            <br /><br /><br /><br /><br /><br />
           </section>
 
           {/* Education Section with Timeline */}
@@ -165,6 +186,7 @@ const Index = () => {
                 </div>
               ))}
             </div>
+            <br /><br /><br /><br /><br /><br />
           </section>
 
           {/* Projects Section */}
@@ -177,6 +199,7 @@ const Index = () => {
                 <ProjectCard key={index} {...project} />
               ))}
             </div>
+            <br /><br /><br />
           </section>
 
           {/* Skills Section */}
@@ -193,6 +216,7 @@ const Index = () => {
               Training & Certification
             </h2>
             <TrainingSection />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
           </section>
 
           
