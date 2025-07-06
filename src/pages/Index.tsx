@@ -20,6 +20,11 @@ import acaResourceRecc6 from '@/images/projectSnaps/acaResourceRecc6.png';
 import collabDoc1 from '@/images/projectSnaps/collabDoc1.png';
 import collabDoc2 from '@/images/projectSnaps/collabDoc2.png';
 
+import nextSkill1 from '@/images/projectSnaps/nextskill1.png';
+import nextSkill2 from '@/images/projectSnaps/nextskill2.png';
+import nextSkill3 from '@/images/projectSnaps/nextskill3.png';
+import nextSkill4 from '@/images/projectSnaps/nextskill4.png';
+
 
 
 const Index = () => {
@@ -55,8 +60,15 @@ const Index = () => {
       title: "nextSkill - Personalized Roadmap Builder",
       description: "Built an AI-powered tool to generate personalized skill-building roadmaps based on user input and preferences.",
       period: "2025",
-      technologies: ["React.js", "MongoDB", "Express.js", "Supabase", "LLM"],
-      githubUrl: "https://github.com/mrdeeeeep/roadmapBuilder.git"
+      technologies: ["React.js", "Typescript", "LLM", "API"],
+      githubUrl: "https://github.com/mrdeeeeep/nextSkill2025.git",
+      liveUrl: "https://nextskill.netlify.app/",
+      screenshots: [
+        nextSkill1,
+        nextSkill2,
+        nextSkill3,
+        nextSkill4
+      ]
     },
   ];
 
