@@ -1,7 +1,7 @@
 
 interface SkillCategory {
   title: string;
-  skills: { name: string; level: string }[];
+  skills: { name: string }[];
 }
 
 const SkillsSection = () => {
@@ -9,70 +9,49 @@ const SkillsSection = () => {
     {
       title: "LANGUAGES",
       skills: [
-        { name: "python", level: "advance" },
-        { name: "C", level: "intermediate" },
-        { name: "javascript", level: "advance" }
+        { name: "Python" },
+        { name: "C" },
+        { name: "JavaScript" }
       ]
     },
     {
       title: "BACKEND",
       skills: [
-        { name: "node.js", level: "intermediate" },
-        { name: "express.js", level: "intermediate" },
-        { name: "flask", level: "advance" }
+        { name: "Node.js" },
+        { name: "Flask" }
       ]
     },
     {
       title: "AI/ML",
       skills: [
-        { name: "large language models", level: "advance" },
-        { name: "deep learning", level: "intermediate" },
-        { name: 'computer vision', level: 'intermediate' },
-        { name: "natural language processing", level: "advance" }
-
+        { name: "RAG" },
+        { name: "Natural Language Processing" }
       ]
     },
     {
       title: "FRONTEND",
       skills: [
-        { name: "html", level: "expert" },
-        { name: "css", level: "advance" },
-        { name: "react.js", level: "intermediate" },
-        { name: "typescript", level: "intermediate" }
+        { name: "HTML" },
+        { name: "CSS" },
+        { name: "React.js" }
       ]
     },
     {
       title: "DATABASE",
       skills: [
-        { name: "mysql", level: "advance" },
-        { name: "mongodb", level: "expert" },
-        { name: "supabase", level: "intermediate" }
+        { name: "MySQL" },
+        { name: "MongoDB" }
       ]
     },
     {
       title: "TOOLS",
       skills: [
-        { name: "git/github", level: "expert" },
-        { name: "figma", level: "advance" },
-        { name: "adobe suite", level: "intermediate" },
+        { name: "Git/GitHub" },
+        { name: "Figma" },
+        { name: "Adobe Suite" },
       ]
     },
-    
   ];
-
-  const getProgressWidth = (level: string) => {
-    switch (level) {
-      case "expert":
-        return "w-[100%]";
-      case "advance":
-        return "w-[85%]";
-      case "intermediate":
-        return "w-[60%]";
-      case "beginner":
-        return "w-[15%]";
-  
-    }
-  };
 
   return (
     <div className="columns-2 gap-6">
@@ -82,23 +61,12 @@ const SkillsSection = () => {
             {category.title}
           </h3>
           
-          <div className="space-y-6">
+          <div className="space-y-3">
             {category.skills.map((skill) => (
-              <div key={skill.name} className="space-y-2">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-sarah-text-secondary lowercase">
-                    {skill.name}
-                  </span>
-                  <span className="text-xs text-sarah-text-tertiary lowercase">
-                    {skill.level}
-                  </span>
-                </div>
-                
-                <div className="w-full bg-sarah-card-border rounded-full h-1">
-                  <div 
-                    className={`bg-sarah-text h-1 rounded-full transition-all duration-1000 ease-out ${getProgressWidth(skill.level)}`}
-                  />
-                </div>
+              <div key={skill.name} className="flex items-center justify-between">
+                <span className="text-sm text-sarah-text-secondary">
+                  {skill.name}
+                </span>
               </div>
             ))}
           </div>

@@ -32,7 +32,7 @@ const Index = () => {
     {
       title: "Academic Resource Recommender - BTech Project",
       description: "Developed a web app that recommends relevant videos, papers, books, repos, and articles based on Filtering/Recommendation Algorithms upon User Interaction Data & Metadata of Recources.",
-      period: "2024 - 2025 (still working on it)",
+      period: "2024 - 2025 (not deployed)",
       technologies: ["React.js", "MongoDB", "Express.js", "API", "Recommendation Algorithms",],
       githubUrl: "https://github.com/mrdeeeeep/skillCrate.git",
       screenshots: [
@@ -45,17 +45,17 @@ const Index = () => {
         
       ]
     },
-    {
-      title: "Real-Time Collaborative Text Editor",
-      description: "Build a modern web-based platform for teams to collaborate on documents in real-time, assign tasks, and use AI (OpenAI API) for productivity (e.g., generating summaries, rewriting, translating",
-      period: "2025 (still working on it)",
-      technologies: ["React.js", "Express.js", "Liveblocks", "TipTap", "LLM"],
-      githubUrl:"https://github.com/mrdeeeeep/collaborativeTextEditor.git",
-      screenshots: [
-        collabDoc1,
-        collabDoc2
-      ]
-    },
+    // {
+    //   title: "Real-Time Collaborative Text Editor",
+    //   description: "Build a modern web-based platform for teams to collaborate on documents in real-time, assign tasks, and use AI (OpenAI API) for productivity (e.g., generating summaries, rewriting, translating",
+    //   period: "2025 (still working on it)",
+    //   technologies: ["React.js", "Express.js", "Liveblocks", "TipTap", "LLM"],
+    //   githubUrl:"https://github.com/mrdeeeeep/collaborativeTextEditor.git",
+    //   screenshots: [
+    //     collabDoc1,
+    //     collabDoc2
+    //   ]
+    // },
     {
       title: "nextSkill - Personalized Roadmap Builder",
       description: "Built an AI-powered tool to generate personalized skill-building roadmaps based on user input and preferences.",
@@ -74,15 +74,24 @@ const Index = () => {
 
   const experiences = [
     {
+      company: "TrieDatum Inc.", 
+      position: "Software Engineer", 
+      period: "SEPT 2025 - Present", 
+      achievements: [
+        "Work as a backend developer within the GenAI team to build and support generative AI applications.",
+        "Develop backend services using Python and AWS"
+      ] 
+    },
+
+    {
       company: "ZCSAsia (Suzoco Services Pvt Ltd) ",
       position: "Web and App Developer Intern",
       period: "MAR 2025 - JUN 2025",
       achievements: [
-        "Built full-stack SaaS features using MongoDB, Express, React, and Node.js",
+        "Assisted the team in building full-stack SaaS features using MongoDB, Express.js, React.js, and Node.js",
         "Developed and deployed responsive landing page.",
-        "Implemented JWT authentication and protected routes on both client and server sides",
-        "Built and integrated REST APIs with efficient database management",
-        "Collaborated on UI/UX workflows using Figma and version control via GitHub"
+        "Built and integrated REST APIs",
+        "Collaborated on UI/UX workflows using Figma."
       ]
     },
     {
@@ -90,9 +99,8 @@ const Index = () => {
       position: "Summer Internship",
       period: "MAY 2024 - JUL 2024",
       achievements: [
-        "Trained and fine-tuned LLM to build a chatbot for specific document, DOP (Delegation of Power) for the employees of the Organization",
-        "Applied NLP techniques (tokenization, lemmatization, TF-IDF, pos-tagging) for data preprocessing",
-        "Worked with large language models and machine learning frameworks"
+        "Focused strictly on machine learning to train and fine-tuned LLM to build a chatbot for a specific document (DOP) for employees",
+        "Utilized LLMs and NLP approaches"
       ]
     }
   ];
@@ -142,7 +150,7 @@ const Index = () => {
           <p className="text-xl text-sarah-text-secondary max-w-2xl leading-relaxed">
             I'm focused on{' '}
             <TypingAnimation 
-              words={['Full Stack Development', 'AI/ML']} 
+              words={['Backend Development']} 
               className="text-sarah-text font-semibold"
             />
           </p>
